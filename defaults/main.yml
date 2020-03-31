@@ -53,6 +53,9 @@ os_short_names:
   rhel77:
     ks_folder: rhel7
     guest_id: rhel_7x64
+  rhel78:
+    ks_folder: rhel7
+    guest_id: rhel_7x64
   rhel80:
     ks_folder: rhel8
     guest_id: rhel_8x64
