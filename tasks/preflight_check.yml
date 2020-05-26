@@ -64,7 +64,7 @@
 
 - name: fail with message
   fail:
-    msg: "iso file ({{ template.name }}) could not be found on the data domain and iso domain does not exists"
+    msg: "iso file ({{ iso_file_name }}) could not be found on the data domain and iso domain does not exists"
   when:
     - iso_file_id is undefined
     - iso_domain is undefined or iso_domain|length == 0
