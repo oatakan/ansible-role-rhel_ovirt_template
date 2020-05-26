@@ -23,7 +23,7 @@ template:
     - name: "{{ template_vm_name }}"
       size: "{{ template_vm_root_disk_size }}GiB"
       format: "{{ template_vm_root_disk_format }}"
-      interface: virtio
+      interface: "{{ template_vm_root_disk_interface | default('virtio') }}"
       bootable: yes
       storage_domain: "{{ providers.ovirt.data_domain | default('data_domain') }}"
   memory: "{{ template_vm_memory }}"

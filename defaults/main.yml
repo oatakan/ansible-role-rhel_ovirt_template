@@ -25,6 +25,7 @@ linux_ks_folder: rhel7
 template_vm_name: centos77-x64-bigdisk_v1
 template_vm_root_disk_size: 300
 template_vm_root_disk_format: cow
+template_vm_root_disk_interface: virtio
 template_vm_memory: 4096
 template_vm_cpu: 2
 template_vm_guest_id: rhel_7x64
