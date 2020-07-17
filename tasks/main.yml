@@ -70,6 +70,8 @@
             apply:
               delegate_to: template_vm
               become: yes
+              vars:
+                target_ovirt: yes
 
       always:
         - include_role:
