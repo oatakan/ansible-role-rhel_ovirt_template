@@ -12,12 +12,12 @@
     name: "{{ iso_file }}"
     upload_image_path: "{{ iso_file_check.stat.path }}"
     storage_domain: "{{ providers.ovirt.data_domain | default('data_domain') }}"
-    size: "{{ (iso_file_check.stat.size/1024/1024)|round(0, 'ceil')|int|string }} MiB"
+    size: "{{ (iso_file_check.stat.size/1024/1024)|round(0, 'ceil')|int|string }}MiB"
     wait: true
     bootable: true
     format: raw
     content_type: iso
-    force: yes
+#    force: yes
   register: disk_iso_file
   when: iso_file_check.stat.exists
 
