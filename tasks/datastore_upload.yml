@@ -17,7 +17,7 @@
     bootable: true
     format: raw
     content_type: iso
-#    force: yes
+    force: yes
   register: disk_iso_file
   when: iso_file_check.stat.exists
 
