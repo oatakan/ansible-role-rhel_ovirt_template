@@ -100,9 +100,6 @@ openssl
 # wget -O/etc/pki/tls/certs/ca-bundle.crt https://curl.haxx.se/ca/cacert.pem --no-check-certificate
 # yum reinstall ca-certificates
 
-# permit root login
-# sed -i s'/#PermitRootLogin\ prohibit-password/PermitRootLogin\ yes'/g /etc/ssh/sshd_config
-
 # sudo
 groupadd {{ local_account_username }}
 useradd -g {{ local_account_username }} -G {{ local_account_username }},wheel -d /home/{{ local_account_username }} -m -p $(openssl passwd -1 {{ local_account_password }}) {{ local_account_username }}
