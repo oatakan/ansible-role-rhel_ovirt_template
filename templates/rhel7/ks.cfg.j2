@@ -117,6 +117,9 @@ sshpass
 # wget -O/etc/pki/tls/certs/ca-bundle.crt https://curl.haxx.se/ca/cacert.pem --no-check-certificate
 # yum reinstall ca-certificates
 
+# permit root login
+sed -i s'/PermitRootLogin\ prohibit-password/PermitRootLogin\ yes'/g /etc/ssh/sshd_config
+
 # sudo
 yum install -y sudo
 echo "{{ local_account_username }}        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers.d/{{ local_account_username }}
