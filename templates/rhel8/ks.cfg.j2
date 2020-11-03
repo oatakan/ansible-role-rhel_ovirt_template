@@ -64,6 +64,7 @@ curl
 unbound-libs
 bzip2
 sshpass
+openssl
 
 # unnecessary firmware
 -aic94xx-firmware
@@ -100,7 +101,7 @@ sshpass
 # yum reinstall ca-certificates
 
 # permit root login
-sed -i s'/PermitRootLogin\ prohibit-password/PermitRootLogin\ yes'/g /etc/ssh/sshd_config
+# sed -i s'/#PermitRootLogin\ prohibit-password/PermitRootLogin\ yes'/g /etc/ssh/sshd_config
 
 # sudo
 groupadd {{ local_account_username }}
