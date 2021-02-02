@@ -26,6 +26,8 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
+Import ovirt.ovirt collections
+
 A list of roles that this role utilizes:
 
 - oatakan.rhn
@@ -37,6 +39,7 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
+    # import ovirt.ovirt collections
     - name: create a ovirt rhel template
       hosts: all
       gather_facts: False

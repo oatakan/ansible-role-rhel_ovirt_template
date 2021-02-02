@@ -7,7 +7,7 @@
   register: iso_file_check
 
 - name: upload iso file to data_domain
-  ovirt_disk:
+  ovirt.ovirt.ovirt_disk:
     auth: "{{ ovirt_auth }}"
     name: "{{ iso_file }}"
     upload_image_path: "{{ iso_file_check.stat.path }}"

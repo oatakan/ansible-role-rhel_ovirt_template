@@ -15,6 +15,9 @@ datastore_ova_folder: ova
 
 remove_vm_on_error: yes
 
+custom_efi_enabled: no
+custom_efi_path: /usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd
+
 local_administrator_password: Chang3MyP@ssw0rd21
 local_account_username: ansible
 local_account_password: Chang3MyP@ssw0rd21
