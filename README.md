@@ -26,7 +26,7 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
-Import ovirt.ovirt collections
+Import ovirt.ovirt collections.
 
 A list of roles that this role utilizes:
 
