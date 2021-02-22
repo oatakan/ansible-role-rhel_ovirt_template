@@ -39,7 +39,7 @@
     boot_devices:
       - hd
     cd_iso: ""
-    custom_properties: "{{ custom_properties_efi if (template_vm_efi|bool and custom_efi_enabled|bool) else ({}) }}"
+    custom_properties: "{{ custom_properties_efi if (template_vm_efi|bool and custom_efi_enabled|bool) else ([{}]) }}"
     force: yes
     state: present
   when: template is defined
