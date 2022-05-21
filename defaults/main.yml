@@ -51,6 +51,8 @@ template_convert_timeout: 600
 template_convert_seal: no
 template_selinux_enabled: no
 
+permit_root_login_with_password: true
+
 ovirt_datacenter: mydatacenter
 ovirt_cluster: production
 ovirt_folder: template
@@ -64,4 +66,7 @@ os_short_names:
     guest_id: rhel_7x64
   rhel8:
     ks_folder: rhel8
+    guest_id: rhel_8x64
+  rhel9:
+    ks_folder: rhel9
     guest_id: rhel_8x64
