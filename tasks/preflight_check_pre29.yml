@@ -1,5 +1,9 @@
 ---
 
+- name: set template_found to false
+  set_fact:
+    template_found: false
+
 - name: get the datacenter name (<2.9)
   ovirt_datacenter_facts:
     auth: "{{ ovirt_auth }}"
