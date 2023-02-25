@@ -1,5 +1,9 @@
 ---
 
+- name: set template_found to false
+  set_fact:
+    template_found: false
+
 - name: get the datacenter name
   ovirt.ovirt.ovirt_datacenter_info:
     auth: "{{ ovirt_auth }}"
@@ -35,9 +39,9 @@
   register: template_info
 
 - block:
-    - name: set template_found to yes
+    - name: set template_found to true
       set_fact:
-        template_found: yes
+        template_found: true
 
     - name: fail with message
       fail:
