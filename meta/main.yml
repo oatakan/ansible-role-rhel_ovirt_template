@@ -3,6 +3,7 @@ galaxy_info:
   author: Orcun Atakan
   description: Ansible galaxy role for building a RHEL/CentOS VM template from an ISO file on Ovirt/RHV.
   role_name: rhel_ovirt_template
+  namespace: oatakan
   company: Red Hat
 
   license: MIT
