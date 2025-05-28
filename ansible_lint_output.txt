@@ -1,0 +1,93 @@
+yaml[indentation]: Wrong indentation: expected 6 but found 4
+.travis.yml:12
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+defaults/main.yml:75
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/convert_to_template.yml:10
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/datastore_iso_remove.yml:25
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/datastore_upload.yml:29
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/export_ovf.yml:20
+
+var-naming[no-role-prefix]: Variables names from within roles should use role_name_ as a prefix. (vars: rhel_ovirt_template_role_action)
+tasks/main.yml:71 Task/Handler: Include oatakan.rhn role (register)
+
+var-naming[no-role-prefix]: Variables names from within roles should use role_name_ as a prefix. (vars: rhel_ovirt_template_role_action)
+tasks/main.yml:101 Task/Handler: Include oatakan.rhn role (unregister)
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/main.yml:158
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/make_iso.yml:34
+
+jinja[invalid]: Unexpected templating type error occurred on ({{ storage_info.ovirt_storage_domains | json_query(the_query) | list | first | default({}) }}): 'NoneType' object is not iterable. 'NoneType' object is not iterable
+tasks/preflight_check.yml:18 Task/Handler: Get data domain
+
+jinja[invalid]: Unexpected templating type error occurred on ({{ storage_info.ovirt_storage_domains | json_query(the_query) | list | first | default({}) }}): 'NoneType' object is not iterable. 'NoneType' object is not iterable
+tasks/preflight_check.yml:26 Task/Handler: Get ISO domain (deprecated as of oVirt/RHV 4.3)
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/preflight_check.yml:72
+
+jinja[invalid]: Unexpected templating type error occurred on ({{ ovirt_storage_domains | json_query(the_query) | list | first | default({}) }}): 'NoneType' object is not iterable. 'NoneType' object is not iterable
+tasks/preflight_check_pre29.yml:16 Task/Handler: Get data domain (<2.9)
+
+jinja[invalid]: Unexpected templating type error occurred on ({{ ovirt_storage_domains | json_query(the_query) | list | first | default({}) }}): 'NoneType' object is not iterable. 'NoneType' object is not iterable
+tasks/preflight_check_pre29.yml:24 Task/Handler: Get ISO domain (deprecated as of oVirt/RHV 4.3)
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/preflight_check_pre29.yml:69
+
+ignore-errors: Use failed_when and specify error conditions instead of using ignore_errors.
+tasks/provision_vm.yml:120 Task/Handler: Waiting for server to come online
+
+yaml[key-duplicates]: Duplication of key "ignore_errors" in mapping
+tasks/provision_vm.yml:129
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/provision_vm.yml:129
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/remove_template.yml:20
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/remove_vm.yml:20
+
+yaml[key-duplicates]: Duplication of key "custom_properties" in mapping
+tasks/stop_vm.yml:47
+
+yaml[key-duplicates]: Duplication of key "force" in mapping
+tasks/stop_vm.yml:48
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/stop_vm.yml:50
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_disk_unlock.yml:11
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_disk_unlock_pre29.yml:10
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_iso_disk_unlock.yml:11
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_iso_disk_unlock_pre29.yml:10
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_vm_poweredoff.yml:13
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+tasks/wait_vm_poweredoff_pre29.yml:12
+
+yaml[new-line-at-end-of-file]: No new line character at the end of file
+vars/main.yml:100
+

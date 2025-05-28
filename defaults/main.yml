@@ -1,21 +1,21 @@
 ---
 
-install_updates: yes
+install_updates: true
 instance_wait_retry_limit: 300
 instance_wait_connection_timeout: 600
 
 # this will remove existing template with the same name
-template_force: no
-template_found: no
+template_force: false
+template_found: false
 
-export_ovf: no
+export_ovf: false
 
 datastore_iso_folder: iso
 datastore_ova_folder: ova
 
-remove_vm_on_error: yes
+remove_vm_on_error: true
 
-custom_efi_enabled: no
+custom_efi_enabled: false
 custom_efi_path: /usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd
 
 qemu_second_cdrom_device_bus_type: ide
@@ -37,7 +37,7 @@ template_vm_root_disk_interface: virtio
 template_vm_memory: 4096
 template_vm_cpu: 2
 template_vm_guest_id: rhel_9x64
-template_vm_efi: no
+template_vm_efi: false
 template_vm_network_name: ovirtmgmt
 template_vm_ip_address: 192.168.10.96
 template_vm_netmask: 255.255.255.0
@@ -48,8 +48,8 @@ template_vm_dns_servers:
   - 8.8.8.8
 
 template_convert_timeout: 600
-template_convert_seal: no
-template_selinux_enabled: no
+template_convert_seal: false
+template_selinux_enabled: false
 
 permit_root_login_with_password: true
 
