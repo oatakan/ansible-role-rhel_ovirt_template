@@ -125,5 +125,4 @@
   when:
     - instance is changed
     - template is defined
-  ignore_errors: true
-  ignore_errors: true
+  failed_when: false
