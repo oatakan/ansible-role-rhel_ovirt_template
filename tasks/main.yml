@@ -1,5 +1,4 @@
 ---
-
 - name: Obtain SSO token with using username/password credentials
   ovirt.ovirt.ovirt_auth:
     url: "{{ lookup('env', 'OVIRT_URL') | default(ovirt.url, true) }}"
@@ -17,14 +16,13 @@
 
 # remove existing template
 - name: Remove existing template
-  block:
-
-    - name: Include remove_template
-      ansible.builtin.include_tasks: remove_template.yml
-
   when:
     - template_force | bool
     - template_found | bool
+
+  block:
+    - name: Include remove_template
+      ansible.builtin.include_tasks: remove_template.yml
 
 - name: Main task block
   block:
@@ -46,12 +44,12 @@
     - name: Add host
       ansible.builtin.add_host:
         hostname: template_vm
-        ansible_host: '{{ template_vm_ip_address }}'
+        ansible_host: "{{ template_vm_ip_address }}"
         host_key_checking: false
         ansible_user: "{{ local_account_username }}"
         ansible_password: "{{ local_account_password }}"
         ansible_port: "{{ vm_ansible_port | default('22') }}"
-        ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null'
+        ansible_ssh_common_args: "-o UserKnownHostsFile=/dev/null"
         ansible_python_interpreter: auto
 
     - name: Run setup module

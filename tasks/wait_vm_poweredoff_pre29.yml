@@ -1,5 +1,4 @@
 ---
-
 - name: Wait for VM status to be poweredoff
   community.general.ovirt_vm_facts:
     auth: "{{ ovirt_auth }}"

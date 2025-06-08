@@ -5,13 +5,13 @@
       ansible.builtin.file:
         path: "{{ temp_directory }}/ks_iso"
         state: directory
-        mode: '0755'
+        mode: "0755"
 
     - name: Create ks.cfg file
       ansible.builtin.template:
         src: "{{ linux_ks_folder }}/ks.cfg.j2"
         dest: "{{ temp_directory }}/ks_iso/ks.cfg"
-        mode: '0644'
+        mode: "0644"
 
     - name: Create ISO
       ansible.builtin.command: >

@@ -1,5 +1,4 @@
 ---
-
 install_updates: true
 instance_wait_retry_limit: 300
 instance_wait_connection_timeout: 600
@@ -22,9 +21,9 @@ qemu_second_cdrom_device_bus_type: ide
 qemu_second_cdrom_device_bus_id: 3
 qemu_second_cdrom_device_bus_unit: 0
 
-local_administrator_password: ''
+local_administrator_password: ""
 local_account_username: ansible
-local_account_password: ''
+local_account_password: ""
 
 distro_name: rhel10
 iso_file_name: CentOS-Stream-10-latest-x86_64-dvd1.iso

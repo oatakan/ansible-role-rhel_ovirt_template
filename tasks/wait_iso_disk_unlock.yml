@@ -1,5 +1,4 @@
 ---
-
 - name: Wait until the disk is unlocked by the oVirt engine
   ovirt.ovirt.ovirt_disk_info:
     auth: "{{ ovirt_auth }}"
