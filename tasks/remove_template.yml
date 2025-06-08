@@ -1,5 +1,4 @@
 ---
-
 - name: Remove template
   ovirt.ovirt.ovirt_template:
     auth: "{{ ovirt_auth }}"

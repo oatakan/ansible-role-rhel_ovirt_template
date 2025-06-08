@@ -1,5 +1,4 @@
 ---
-
 - name: Wait until the image is unlocked by the oVirt engine (<2.9)
   community.general.ovirt_disk_facts:
     auth: "{{ ovirt_auth }}"

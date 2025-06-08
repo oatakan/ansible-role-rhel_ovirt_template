@@ -1,5 +1,4 @@
 ---
-
 - name: Remove ISO image
   block:
     - name: Remove ISO file from data_domain

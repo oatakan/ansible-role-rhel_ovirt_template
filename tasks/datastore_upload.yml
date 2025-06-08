@@ -1,5 +1,4 @@
 ---
-
 - name: Validate file
   ansible.builtin.stat:
     path: "{{ playbook_dir }}/{{ temp_directory }}/linux_{{ distro_name }}_ks_autogen.iso"

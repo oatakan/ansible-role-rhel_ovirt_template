@@ -1,5 +1,4 @@
 ---
-
 - name: Remove VM
   ovirt.ovirt.ovirt_vm:
     auth: "{{ ovirt_auth }}"
