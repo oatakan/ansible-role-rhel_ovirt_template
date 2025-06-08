@@ -1,5 +1,5 @@
 ---
-- name: convert to template
+- name: Convert to template
   ovirt.ovirt.ovirt_template:
     auth: "{{ ovirt_auth }}"
     name: "{{ template.name }}"

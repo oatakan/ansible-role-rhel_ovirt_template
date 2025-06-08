@@ -1,6 +1,6 @@
 ---
 
-- name: remove template
+- name: Remove template
   ovirt.ovirt.ovirt_template:
     auth: "{{ ovirt_auth }}"
     cluster: "{{ providers.ovirt.cluster }}"
@@ -11,8 +11,8 @@
   register: undeploy
   when: template is defined
 
-- name: wait for template deletion to complete
-  async_status:
+- name: Wait for template deletion to complete
+  ansible.builtin.async_status:
     jid: "{{ undeploy.ansible_job_id }}"
   register: instance
   until: instance.finished
