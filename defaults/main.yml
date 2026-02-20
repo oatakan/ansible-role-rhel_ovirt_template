@@ -13,6 +13,7 @@ datastore_iso_folder: iso
 datastore_ova_folder: ova
 
 remove_vm_on_error: true
+vm_failed: false
 
 custom_efi_enabled: false
 custom_efi_path: /usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd

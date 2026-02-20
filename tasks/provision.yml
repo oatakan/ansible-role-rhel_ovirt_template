@@ -104,7 +104,11 @@
     - name: Include remove_template.yml tasks (rescue)
       ansible.builtin.include_tasks: remove_template.yml
       when: remove_vm_on_error | bool
-
+    
+    - name: set vm_failed variable
+      ansible.builtin.set_fact:
+        vm_failed: true
+    
   always:
     - name: Refresh SSO credentials (always)
       ovirt.ovirt.ovirt_auth:
@@ -128,3 +132,8 @@
       ovirt.ovirt.ovirt_auth:
         state: absent
         ovirt_auth: "{{ ovirt_auth }}"
+
+- name: fail if needed
+  ansible.builtin.fail:
+    msg: "fail to create a template: {{ template.name }}."
+  when: vm_failed|bool
